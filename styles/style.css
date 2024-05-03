@@ -1,5 +1,5 @@
 :root {
-    --accent-color: #46A358;
+    --accent-color: #46A358;;
     --secondary-color: #3D3D3D;
     --main-color: #FFFFFF;
     --bg-secondary-color: #FBFBFB;
@@ -51,6 +51,7 @@ a {
     border: 0;
     padding: 15px;
     min-width: var(--categories-menu-width);
+    height: 750px;
 }
 
 .catalog__categories h4 {
@@ -70,26 +71,38 @@ a {
     flex-direction: column;
 }
 
-/*.catalog__categories li {*/
-/*    margin-bottom: 10px;*/
-/*}*/
-/*.catalog__categories li:last-child {*/
-/*    margin-bottom: 0;*/
-/*}*/
-
-/*.catalog__categories li:not(:last-child) {*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
 .catalog__products {
     display: flex;
-    gap: 25px;
     width: calc(100% - var(--categories-menu-full-width));
     flex-wrap: wrap;
+    gap: 25px;
+    margin-left: auto;
+    margin-top: -750px;
 }
 
 .catalog__product {
-    width: calc(100% / 3 - 50px);
+    flex: 25%;
+}
+
+.catalog__product-price {
+    font-weight: bold;
+    color: var(--accent-color)
+}
+
+.catalog__product-title-4 {
+    margin-top: 25px;
+}
+
+.catalog__product-image-4 {
+    margin-top: 50px;
+}
+
+.catalog__product-title-5 {
+    margin-top: 35px;
+}
+
+.catalog__product-image-5 {
+    margin-top: 40px;
 }
 
 .active {
@@ -102,9 +115,13 @@ a {
     border-bottom: solid 3px var(--accent-color);
 }
 
-.links {
-    width: 250px;
-    flex-direction: row;
+.select {
+   margin-left: 300px;
+}
+
+.link {
+display: flex;
+
 }
 
 .catalog__links {
@@ -113,5 +130,42 @@ a {
 
 li{
     margin-bottom: 15px;
-    margin-right: 10px;
+    margin-right: 40px;
+
+}
+
+.banner {
+    background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
+    width: 310px;
+    height: 420px;
+    top: 945px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    margin-right: 400px;
+    margin-top: -470px;
+}
+
+.banner__image {
+    margin-top: 5px;
+}
+
+.banner__sale {
+    font-family: Cera Pro, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.banner__header-sale {
+    font-family: Hanging Letters, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 65px;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--accent-color);
+
 }
