@@ -48,7 +48,7 @@ a {
 
 .catalog__categories {
     background-color: var(--bg-secondary-color);
-    border: 1px solid #ccc;
+    border: 0;
     padding: 15px;
     min-width: var(--categories-menu-width);
 }
@@ -90,4 +90,28 @@ a {
 
 .catalog__product {
     width: calc(100% / 3 - 50px);
+}
+
+.active {
+    font-weight: bold;
+}
+
+.active-link {
+    font-weight: bold;
+    color: var(--accent-color);
+    border-bottom: solid 3px var(--accent-color);
+}
+
+.links {
+    width: 250px;
+    flex-direction: row;
+}
+
+.catalog__links {
+   margin-left: 10px;
+}
+
+li{
+    margin-bottom: 15px;
+    margin-right: 10px;
 }
