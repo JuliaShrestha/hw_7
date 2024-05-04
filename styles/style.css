@@ -169,3 +169,28 @@ li{
     color: var(--accent-color);
 
 }
+
+.buttons {
+    text-align: right;
+    margin-right: 430px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.active-button {
+    background-color: var(--accent-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.button {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid lightgray;
+}
